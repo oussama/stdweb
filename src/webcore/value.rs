@@ -19,7 +19,7 @@ pub struct Null;
 
 /// A type representing a reference to a JavaScript value.
 #[repr(C)]
-#[derive(PartialEq, Eq, Debug)]
+#[derive(PartialEq, Eq, Debug, Default)]
 pub struct Reference( i32 );
 
 impl Reference {
